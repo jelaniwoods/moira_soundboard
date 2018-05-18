@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <Hexagon/>
+    <img src="./assets/moira.png" alt="Moira">
+    <!-- <Hexagon/>
     <Hexagon/>
     <Hexagon/>
     <div style="float: left; width: 400px;">
@@ -19,7 +20,7 @@
         <div class="hex2 even"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
         <div class="hex2"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
     </div>
-</div>
+</div> -->
   </div>
 </template>
 
@@ -42,6 +43,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: rgb(156, 142, 170);
 }
  .hex-row {
         clear: left;
