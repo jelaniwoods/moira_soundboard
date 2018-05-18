@@ -1,17 +1,35 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Hexagon/>
+    <Hexagon/>
+    <Hexagon/>
+    <div style="float: left; width: 400px;">
+    <div class="hex2-row">
+        <div class="hex2"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
+        <div class="hex2 even"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
+        <div class="hex2"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
+    </div>
+    <div class="hex2-row">
+        <div class="hex2"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
+        <div class="hex2 even"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
+        <div class="hex2"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
+    </div>
+    <div class="hex2-row">
+        <div class="hex2"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
+        <div class="hex2 even"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
+        <div class="hex2"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
+    </div>
+</div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Hexagon from './components/Hexagon.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Hexagon
   }
 }
 </script>
@@ -25,4 +43,41 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+ .hex-row {
+        clear: left;
+    }
+    .hex-row.even {
+        margin-left: 53px;
+    }
+    .hex2 {
+        float: left;
+        margin-right: -26px;
+        margin-bottom: -50px;
+    }
+    .hex2 .left {
+        float: left;
+        width: 0;
+        border-right: 30px solid #6C6;
+        border-top: 52px solid transparent;
+        border-bottom: 52px solid transparent;
+    }
+    .hex2 .middle {
+        float: left;
+        width: 60px;
+        height: 104px;
+        background: #6C6;
+    }
+    .hex2 .right {
+        float: left;
+        width: 0;
+        border-left: 30px solid #6C6;
+        border-top: 52px solid transparent;
+        border-bottom: 52px solid transparent;
+    }
+    .hex2-row {
+        clear: left;
+    }
+    .hex2.even {
+        margin-top: 53px;
+    }
 </style>
